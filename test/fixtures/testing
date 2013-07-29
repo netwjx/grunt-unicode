@@ -1,0 +1,5 @@
+Testing
+测试中文
+abcUnicode字符串将会被替换成\uXXXX形式
+我自己目前的实际用途是在Firefox扩展开发，直接在源码中写中文会乱码，对于某些不确定通过什么charset引入的js文件也可以用这个来处理
+end
