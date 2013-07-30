@@ -1,6 +1,6 @@
 # grunt-unicode [![Build Status](https://travis-ci.org/netwjx/grunt-unicode.png)](https://travis-ci.org/netwjx/grunt-unicode) [![Dependency Status](https://gemnasium.com/netwjx/grunt-unicode.png)](https://gemnasium.com/netwjx/grunt-unicode) [![NPM version](https://badge.fury.io/js/grunt-unicode.png)](http://badge.fury.io/js/grunt-unicode)
 
-> Convert unicode char to \\uXXXX. example use in Firefox Add-on
+> Convert unicode char to \\uXXXX. For example use in Firefox Add-on
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
