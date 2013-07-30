@@ -2,8 +2,20 @@ module.exports = (grunt)->
   grunt.initConfig
     unicode:
       main:
+        files:[
+          {
+            src: 'test/fixtures/testing'
+            dest: 'tmp/default_options'
+          }
+          {
+            src: 'tmp/default_options_copy'
+          }
+        ]
+    copy:
+      tmp:
         files:
-          'tmp/default_options': 'test/fixtures/testing'
+          'tmp/default_options_copy': 'test/fixtures/testing'
+        
     coffee:
       options:
         bare: on
@@ -57,4 +69,5 @@ module.exports = (grunt)->
     'clean'
     'coffeelint'
     'coffee'
+    'copy:tmp'
   ]

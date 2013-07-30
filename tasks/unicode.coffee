@@ -8,7 +8,7 @@ module.exports = exports = (grunt)->
         grunt.file.read src,
           encoding: opts.encoding
 
-      grunt.file.write f.dest, unicode(conts.join '\n'),
+      grunt.file.write f.dest ? f.src[0], unicode(conts.join '\n'),
         encoding: opts.encoding
 
 

@@ -1,7 +1,7 @@
 {
   "name": "grunt-unicode",
   "description": "Convert unicode char to \\uXXXX. example use in Firefox Add-on",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/netwjx/grunt-unicode",
   "author": {
     "name": "netwjx",
@@ -34,7 +34,8 @@
     "grunt-contrib-nodeunit": "~0.2.0",
     "matchdep": "~0.1.2",
     "grunt-coffeelint": "0.0.7",
-    "grunt-contrib-watch": "~0.4.4"
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-copy": "~0.4.1"
   },
   "peerDependencies": {
     "grunt": "~0.4.1"
