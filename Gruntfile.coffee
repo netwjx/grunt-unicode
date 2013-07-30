@@ -63,6 +63,7 @@ module.exports = (grunt)->
 
   grunt.registerTask 'test', [
     'nodeunit'
+    'clean:tests'
   ]
 
   grunt.registerTask 'default', [
