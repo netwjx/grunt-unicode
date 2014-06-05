@@ -1,11 +1,11 @@
 {
   "name": "grunt-unicode",
   "description": "Convert unicode char to \\uXXXX. For example use in Firefox Add-on",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/netwjx/grunt-unicode",
   "author": {
     "name": "netwjx",
-    "email": "netwjx@gmail.com"
+    "email": "netwjx(at)gmail.com"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "pretest": "grunt && grunt unicode",
-    "test": "grunt test"
+    "test": "grunt build test"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -42,6 +41,9 @@
   },
   "keywords": [
     "gruntplugin",
-    "unicode"
+    "unicode",
+    "firefox",
+    "addon",
+    "add-on"
   ]
 }
