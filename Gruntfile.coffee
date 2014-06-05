@@ -46,6 +46,9 @@ module.exports = (grunt)->
           'coffee'
         ]
     clean:
+      main: [
+        '*.tgz'
+      ]
       tests: [
         'tmp'
         'test/**/*.js'
