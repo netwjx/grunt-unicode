@@ -23,7 +23,6 @@ module.exports = (grunt)->
         files:[
           expand: on
           src: [
-            'tasks/**/*.coffee'
             'test/**/*.coffee'
           ]
           ext: '.js'
@@ -31,7 +30,7 @@ module.exports = (grunt)->
     coffeelint:
       options:
         max_line_length:
-          value: 130
+          value: 80
       main:
         files:
           src: [
@@ -41,19 +40,16 @@ module.exports = (grunt)->
           ]
     watch:
       main:
-        files: "<%= coffee.main.files.0.src %>"
+        files: "**/*.coffee"
         tasks: [
-          'clean'
+          'coffeelint'
           'coffee'
         ]
     clean:
-      main:
-        expand: on
-        src: [
-          'tasks/**/*.js'
-          'test/**/*.js'
-        ]
-      tests: 'tmp'
+      tests: [
+        'tmp'
+        'test/**/*.js'
+      ]
     nodeunit:
       tests: 'test/*_test.js'
 
@@ -62,13 +58,19 @@ module.exports = (grunt)->
   grunt.loadTasks 'tasks'
 
   grunt.registerTask 'test', [
+    'unicode'
     'nodeunit'
     'clean:tests'
   ]
 
-  grunt.registerTask 'default', [
+  grunt.registerTask 'build', [
     'clean'
     'coffeelint'
     'coffee'
     'copy:tmp'
+  ]
+
+  grunt.registerTask 'default', [
+    'build'
+    'watch'
   ]
