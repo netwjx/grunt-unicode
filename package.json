@@ -16,8 +16,8 @@
   },
   "licenses": [
     {
-      "type": "MPL-2.0",
-      "url": "https://github.com/netwjx/grunt-unicode/blob/master/LICENSE-MPL-2.0"
+      "type": "MIT",
+      "url": "https://github.com/netwjx/grunt-unicode/blob/master/LICENSE-MIT.txt"
     }
   ],
   "engines": {
