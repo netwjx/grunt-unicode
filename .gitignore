@@ -3,3 +3,4 @@ npm-debug.log
 tmp
 tasks/*.js
 test/*_test.js
+*.tgz
